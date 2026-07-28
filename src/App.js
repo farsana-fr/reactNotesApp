@@ -50,7 +50,7 @@ Tooltips and popovers for displaying and positioning (also requires Popper)`,
 
 export default function App() {
   const [showAddForm, setShowAddForm] = useState(null);
-  const [notes, setNotes] = useState(notesList);
+  const [notes, setNotes] = useState(null);
   const [selectedNote, setSelectedNote] = useState(null);
   function openAddForm() {
     setShowAddForm(1);
