@@ -1,52 +1,52 @@
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 
-const notesList = [
-  {
-    id: 1,
-    title: "title one",
-    description: `urious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.Accordions for extending our Collapse plugin
-Alerts for dismissing
-Buttons for toggling states and checkbox/radio functionality
-Carousel for all slide behaviors, controls, and indicators
-Collapse for toggling visibility of content
-Dropdowns for displaying and positioning (also requires Popper)
-Modals for displaying, positioning, and scroll behavior
-Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
-Navs with the Tab plugin for toggling content panes
-Offcanvases for displaying, positioning, and scroll behavior
-Scrollspy for scroll behavior and navigation updates
-Toasts for displaying and dismissing
-Tooltips and popovers for displaying and positioning (also requires Popper)urious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
+// const notesList = [
+//   {
+//     id: 1,
+//     title: "title one",
+//     description: `urious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.Accordions for extending our Collapse plugin
+// Alerts for dismissing
+// Buttons for toggling states and checkbox/radio functionality
+// Carousel for all slide behaviors, controls, and indicators
+// Collapse for toggling visibility of content
+// Dropdowns for displaying and positioning (also requires Popper)
+// Modals for displaying, positioning, and scroll behavior
+// Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
+// Navs with the Tab plugin for toggling content panes
+// Offcanvases for displaying, positioning, and scroll behavior
+// Scrollspy for scroll behavior and navigation updates
+// Toasts for displaying and dismissing
+// Tooltips and popovers for displaying and positioning (also requires Popper)urious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
 
-Accordions for extending our Collapse plugin
-Alerts for dismissing
-Buttons for toggling states and checkbox/radio functionality
-Carousel for all slide behaviors, controls, and indicators
-Collapse for toggling visibility of content
-Dropdowns for displaying and positioning (also requires Popper)
-Modals for displaying, positioning, and scroll behavior
-Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
-Navs with the Tab plugin for toggling content panes
-Offcanvases for displaying, positioning, and scroll behavior
-Scrollspy for scroll behavior and navigation updates
-Toasts for displaying and dismissing
-Tooltips and popovers for displaying and positioning (also requires Popper)`,
-    bgColor: "#ffd3fd",
-  },
-  {
-    id: 2,
-    title: "title two",
-    description: "test description two",
-    bgColor: "#d0fffe",
-  },
-  {
-    id: 3,
-    title: "title three",
-    description: "test description three",
-    bgColor: "#e4ffde",
-  },
-];
+// Accordions for extending our Collapse plugin
+// Alerts for dismissing
+// Buttons for toggling states and checkbox/radio functionality
+// Carousel for all slide behaviors, controls, and indicators
+// Collapse for toggling visibility of content
+// Dropdowns for displaying and positioning (also requires Popper)
+// Modals for displaying, positioning, and scroll behavior
+// Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
+// Navs with the Tab plugin for toggling content panes
+// Offcanvases for displaying, positioning, and scroll behavior
+// Scrollspy for scroll behavior and navigation updates
+// Toasts for displaying and dismissing
+// Tooltips and popovers for displaying and positioning (also requires Popper)`,
+//     bgColor: "#ffd3fd",
+//   },
+//   {
+//     id: 2,
+//     title: "title two",
+//     description: "test description two",
+//     bgColor: "#d0fffe",
+//   },
+//   {
+//     id: 3,
+//     title: "title three",
+//     description: "test description three",
+//     bgColor: "#e4ffde",
+//   },
+// ];
 
 export default function App() {
   const [showAddForm, setShowAddForm] = useState(null);
@@ -85,7 +85,7 @@ setSelectedNote(note);
     console.log(newNote);
     if (!notes) {
       setNotes([newNote]);
-    } else setNotes((items) => [...notes, newNote]);
+    } else setNotes((items) => [...items, newNote]);
     setShowAddForm(null);
   }
   return (
